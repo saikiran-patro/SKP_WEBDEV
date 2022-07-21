@@ -7,10 +7,18 @@ import Certificate from "./Components/Certificates/Certificate.jsx"
 import Profiles from "./Components/Profiles/Profiles.jsx"
 import Skills from "./Components/Skills/Skills.jsx";
 import './App.scss'; 
+
+import {useState} from 'react';
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState(true);
   return (
     <div className="App">
-       <Topbar/>
+
+
+      
+       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+
        <div className="Sections">
            <Intro/>
            <About/>
@@ -19,9 +27,12 @@ function App() {
            <Profiles/>
            <Certificate/>
            <Contact/>
+
+
        
        
        </div>
+
            
    
        
