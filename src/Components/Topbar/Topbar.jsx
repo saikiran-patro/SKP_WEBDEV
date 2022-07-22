@@ -14,7 +14,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
     <div className={"topbar "+(menuOpen && "active")} id='topbar' >
       <div className="wrapper">
          <div className="left">
-              <img src={require("./favicon-modified.png") } alt="hello" className="top-logo" />
+              <img src={require("./favicon.png") } alt="hello" className="top-logo" />
               <h3><a href="#Intro">SAI KIRAN PATRO</a> </h3>
          </div>
          

@@ -6,20 +6,23 @@ import Intro from "./Components/Intro/Intro.jsx";
 import Certificate from "./Components/Certificates/Certificate.jsx"
 import Profiles from "./Components/Profiles/Profiles.jsx"
 import Skills from "./Components/Skills/Skills.jsx";
+import Menu from "./Components/Menu/Menu.jsx";
+
 import './App.scss'; 
 
 import {useState} from 'react';
 function App() {
 
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="App">
 
 
       
        <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-
+       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
        <div className="Sections">
+           
            <Intro/>
            <About/>
            <Skills/>
