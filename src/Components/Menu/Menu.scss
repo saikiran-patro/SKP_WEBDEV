@@ -15,21 +15,37 @@
     align-items:center;
     ul{
         li{
+            margin-bottom:20px;
             a{
                 text-decoration:none;
                 text-align: center;
-                font-size:25px;
+                color:$mainColor;
+                transition: all 1s ease-in-out;
+    
+                 
+                font-size:30px;
                 .MenuIcon{
-                    font-size:20px;
+                    font-size:25px;
                     margin-top:5px;
                     padding-right: 5px;
+                    margin-right: 5px;
 
                 }
             }
         }
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
     }
     &.active{
         right:0px;
         background-color: $mainColor;
-    }
+        a{
+            color:$secondaryColor;
+        text-decoration: none;
+   
+
+        }
+         }
 }

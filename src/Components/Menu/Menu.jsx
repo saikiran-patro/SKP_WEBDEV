@@ -15,13 +15,13 @@ export default function Menu({menuOpen, setMenuOpen}) {
 
         <ul>
 
-            <li> <a href="#Intro"><FaHome className="MenuIcon"/> Home</a></li>
-            <li> <a href="#About"><FaUser className="MenuIcon"/> About</a></li>
-            <li> <a href="#Skills"> <FaCode className="MenuIcon" />Skills</a></li>
-            <li> <a href="#Projects"> <FaLaptopCode className="MenuIcon"/>Projects</a></li>
-            <li> <a href="#Profiles"> <FaBug className="MenuIcon"/>Profiles</a></li>
-            <li> <a href="#Certificates"> <FaCertificate className="MenuIcon"/>Certifications</a></li>
-            <li> <a href="#Contact"> <FaEnvelope className="MenuIcon"/> Contact</a></li>
+        <li> <a href="#Intro"><FaHome className="MenuIcon"/> Home</a></li>
+        <li> <a href="#About"><FaUser className="MenuIcon"/> About</a></li>
+        <li> <a href="#Skills"> <FaCode className="MenuIcon" /> Skills</a></li>
+        <li> <a href="#Projects"> <FaLaptopCode className="MenuIcon"/> Projects</a></li>
+        <li> <a href="#Profiles"> <FaBug className="MenuIcon"/> Profiles</a></li>
+        <li> <a href="#Certificates"> <FaCertificate className="MenuIcon"/> Certifications</a></li>
+        <li> <a href="#Contact"> <FaEnvelope className="MenuIcon"/> Contact</a></li>
         
         
         

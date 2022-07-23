@@ -56,14 +56,23 @@
                 }
             }
         }
+        @media(min-width:300px) and (max-width:875px){
+
+            .hamburger{
+                display:none;
+            }
+            .right{
+                display:none;
+            }
+        }
 
     }
     &.active{
         background-color:$mainColor;
-        color:#E8E8E8;
+        color:$secondaryColor;
         .left{
             a{
-                color:#E8E8E8;
+                color:$secondaryColor;
             }
         }
     
@@ -75,20 +84,22 @@
               
             span{
                   &:nth-child(1){
-                    background-color:#E8E8E8;
+                    background-color:$secondaryColor;
                     transform:rotate(45deg);
                 }
                 &:nth-child(2){
                     opacity:0
                 }
                 &:nth-child(3){
-                    background-color:#E8E8E8;
+                    background-color:$secondaryColor;
                     transform:rotate(-45deg);
                 }
                 
             }
         }
+        
     }
     
     
 }
+

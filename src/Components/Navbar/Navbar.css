@@ -1,0 +1,47 @@
+.Navbar{
+    display:None;
+    
+}
+@media(min-width:300px) and (max-width:875px){
+    .NavbarContainer{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:40px;
+        width:100%;
+        position:fixed;
+        bottom:10px;
+
+    }
+
+    .Navbar{
+        overflow:hidden;
+        display:block;
+        width:300px;
+        border-radius: 10px;
+        height:40px;
+        background-color: #383E56;
+    }
+    ul{
+        display:flex;
+        height:45px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin:0px;
+        padding:0px;
+        list-style: none;
+    }
+    ul li{
+        text-decoration: none;
+    
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    li a{
+        color:#F69E7B;
+        
+    
+    }
+}
