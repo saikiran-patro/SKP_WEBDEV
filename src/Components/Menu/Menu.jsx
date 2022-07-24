@@ -4,7 +4,7 @@ import React from 'react'
 import './Menu.scss'
 
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FaHome ,FaUser,FaCode,FaLaptopCode, FaBug,FaCertificate,FaEnvelope} from "react-icons/fa";
+import { FaHome ,FaUser,FaCode,FaLaptopCode, FaBug,FaCertificate,FaEnvelope, FaYoutube} from "react-icons/fa";
 
 
 
@@ -15,13 +15,14 @@ export default function Menu({menuOpen, setMenuOpen}) {
 
         <ul>
 
-        <li> <a href="#Intro"><FaHome className="MenuIcon"/> Home</a></li>
-        <li> <a href="#About"><FaUser className="MenuIcon"/> About</a></li>
-        <li> <a href="#Skills"> <FaCode className="MenuIcon" /> Skills</a></li>
-        <li> <a href="#Projects"> <FaLaptopCode className="MenuIcon"/> Projects</a></li>
-        <li> <a href="#Profiles"> <FaBug className="MenuIcon"/> Profiles</a></li>
-        <li> <a href="#Certificates"> <FaCertificate className="MenuIcon"/> Certifications</a></li>
-        <li> <a href="#Contact"> <FaEnvelope className="MenuIcon"/> Contact</a></li>
+        <li onClick={() => setMenuOpen(false)}> <a href="#Intro"><FaHome className="MenuIcon"/> Home</a></li>
+        <li onClick={() => setMenuOpen(false)}> <a href="#About"><FaUser className="MenuIcon"/> About</a></li>
+        <li onClick={() => setMenuOpen(false)}> <a href="#Skills"> <FaCode className="MenuIcon" /> Skills</a></li>
+        <li onClick={() => setMenuOpen(false)}> <a href="#Projects"> <FaLaptopCode className="MenuIcon"/> Projects</a></li>
+        <li onClick={() => setMenuOpen(false)}> <a href="#Profiles"> <FaBug className="MenuIcon"/> Profiles</a></li>
+        <li onClick={() => setMenuOpen(false)}> <a href="#Certificates"> <FaCertificate className="MenuIcon"/> Certifications</a></li>
+        <li onClick={() => setMenuOpen(false)}> <a href="https://www.youtube.com/channel/UCPv9XuCE1Cho5QDYBcqWphA" rel="noreferrer"target="_blank"> <FaYoutube className="MenuIcon"/> Youtube</a></li>
+        <li onClick={() => setMenuOpen(false)}> <a href="#Contact"> <FaEnvelope className="MenuIcon"/> Contact</a></li>
         
         
         
