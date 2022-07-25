@@ -22,7 +22,7 @@ export default function Intro() {
                <h3><span ><Typewriter
                
   options={{
-    strings: ['Mobile Developer', 'Web Developer','Problem Solver','Content Creator'],
+    strings: ['Mobile App Developer', 'Web Developer','Problem Solver','Content Creator'],
     autoStart: true,
     loop: true,
   }}
@@ -30,19 +30,13 @@ export default function Intro() {
 
                onInit={(typewriter) => {
                  typewriter.typeString('Technophile')
-                   .callFunction(() => {
-                     console.log('String typed out!');
-                   })
                    .pauseFor(2500)
                    .deleteAll()
-                   .callFunction(() => {
-                     console.log('All strings were deleted');
-                   })
                    .start();
                }}
              />
              </span></h3>
-
+             
                <div className="actionButtons">
                <button><a href="mailto:saikiranpatro198@gmail.com">Hire Me</a></button>
                <button><a href="#Intro">View Resume</a></button>

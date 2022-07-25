@@ -1,7 +1,7 @@
 
 @import "../../Global.scss";
 .Intro{
-    background-color:#E8E8E8;
+    background-color:#E7F6F2;
     display: flex;
     flex-direction: row;
 
@@ -107,7 +107,7 @@
                             font-size: 20px;  
                         }                          
                             border:3px solid $mainColor;
-                            border-radius: 15px;
+                            border-radius: 10px;
                             transition: all 2s ease;;
                             
                           
@@ -128,4 +128,73 @@
         }
         
     }
-}
+    @media(min-width:300px) and (max-width:875px){
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            .left{
+                overflow:hidden;
+                
+                .ImgContainer{
+                    width:200px;
+                    height:200px;
+                    
+                    img{
+                        width:80%;
+                        height:80%;
+                    }
+                }
+
+            
+             }
+             .right{
+
+                overflow:hidden;
+                display: flex;
+                flex:1;
+                .wrapper{
+                    margin-left:0px;
+                    padding-left:20px;
+                    align-items:center;
+                    justify-content:flex-start;
+                    margin-top:80px;
+                    h1{
+                        font-size:30px;
+                    }
+                    h2{
+                        font-size:20px;
+                    }
+                    h3{
+                        font-size:15px;
+                    }
+                    .actionButtons{
+                        margin-top:20px;
+                        flex-direction: column;
+                        button{
+                            width:180px;
+                            height:30px;
+                            overflow:hidden;
+                            &:nth-child(1){
+                                a{
+                                    font-size:15px;
+                                }
+                            }
+                            &:last-child{
+                                a{
+                                    font-size:15px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+
+
+             }
+            
+    
+    }
+        
+    }
