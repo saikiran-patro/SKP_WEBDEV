@@ -1,3 +1,21 @@
-.skills{
-    background-color: blueviolet;
+.Skills{
+    background-color: #E7F6F2;
+    display:flex;
+    height:100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    .skillContainer{
+        
+        background-color: #2C3333;
+        width:80%;
+        height:700px;
+        border-radius:30px;
+        .skillIcon{
+            font-size:100px;
+            color:#A5C9CA;
+            border: 5px solid  #E7F6F2;
+        }
+    }
+
 }
