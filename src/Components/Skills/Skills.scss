@@ -10,11 +10,78 @@
         background-color: #2C3333;
         width:80%;
         height:700px;
+        overflow: hidden;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        img{
+            &:nth-child(1){
+                width:90%;
+            
+            height:100%;
+            border-radius:30px;
+
+            }
+            &:nth-child(2){
+                display:none;
+            }
+            &:last-child{
+                display:none;
+            }
+           
+        }
         border-radius:30px;
         .skillIcon{
             font-size:100px;
             color:#A5C9CA;
             border: 5px solid  #E7F6F2;
+        }
+        @media(min-width:600px) and (max-width:1300px){
+            img{
+                &:nth-child(1){
+                    display:none;
+
+                }
+                &:nth-child(2){
+                    display:block;
+                    width:100%;
+                    
+                    height:100%;
+                    border-radius:30px;
+
+                }
+                &:last-child{
+                    display:none;
+                }
+
+            }
+        }
+        @media(min-width:300px) and (max-width:599px){
+            height:500px;
+            margin-bottom: 20px;
+            img{
+                &:nth-child(1){
+                    display:none;
+
+                }
+                &:nth-child(2){
+                    display:none;
+                }
+                &:last-child{
+                    
+                    display:block;
+                    width:100%;
+                    
+                    height:100%;
+                    border-radius:30px;
+
+
+                }
+
+            }
+            
+
         }
     }
 
