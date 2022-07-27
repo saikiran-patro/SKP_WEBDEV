@@ -2,7 +2,7 @@
     display:None;
     
 }
-@media(min-width:300px) and (max-width:875px){
+@media(min-width:300px) and (max-width:1050px){
     .NavbarContainer{
         display:flex;
         align-items:center;

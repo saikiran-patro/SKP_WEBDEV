@@ -128,14 +128,16 @@
         }
         
     }
-    @media(min-width:300px) and (max-width:875px){
+    @media(min-width:300px) and (max-width:1050px){
         
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content:center;
+            justify-content:space-between;
             .left{
                 overflow:hidden;
+            
+                margin-top:15%;
                 
                 .ImgContainer{
                     width:200px;
@@ -159,7 +161,7 @@
                     padding-left:0px;
                     align-items:center;
                     justify-content:flex-start;
-                    margin-top:80px;
+                 
                     h1{
                         font-size:30px;
                     }

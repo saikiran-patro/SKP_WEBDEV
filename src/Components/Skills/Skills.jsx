@@ -16,6 +16,7 @@ export default function Skills() {
   //       <DiLinux className="skillIcon"/>
    return (
     <div className='Skills' id='Skills'>
+    <h2>SKILLS</h2>
     <div className="skillContainer">
         <img src={require('./skills.png')} alt="skills" className="skillsImg"/>
         <img src={require('./skills2.png')} alt="skills" className="skillsImg"/> 
