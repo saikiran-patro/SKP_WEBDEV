@@ -43,7 +43,7 @@ export default function Projects() {
     const [Iottype,setIottype]=useState(false);
   return (
     <div className='Projects' id='Projects'>
-    <h1>Projects</h1>
+    <h1>PROJECTS</h1>
     <ul>
          <li className={(Featuredtype && 'active')}  onClick={()=>checkType('Featured')}><FaLightbulb className='LiIcons' />Featured</li>
          <li className={(Webtype && 'active')} onClick={()=>checkType('Web')}><FaGlobe className='LiIcons' /> Web App</li>

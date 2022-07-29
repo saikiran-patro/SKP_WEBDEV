@@ -74,12 +74,13 @@
         .left{
             overflow: hidden;
             .aboutContainer{
+                
                 display:flex;
                 flex-direction:column;
-                justify-content:center;
+                justify-content:flex-start;
                 align-items: center;
                 
-                
+                margin-top:40%;
                 
                 padding:50px;
                 padding-top:30px;

@@ -1,3 +1,123 @@
+@import "../../Global.scss";
+
 .Profiles{
-    background-color: cadetblue;
+
+    background-color: #2C3333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    h1{
+        font-size:40px;
+        color:#A5C9CA;
+        
+        padding:20px;
+    
+        overflow:hidden;
+    }
+    
+
+    .coderImg{
+        width:250px;
+        height:250px;
+        position:absolute;
+        right:0px;
+        bottom:0px;
+        
+    }
+
+
+  .codeProfiles{
+    background-color: #2C3333;
+    display:flex;
+    justify-content:center;
+    gap:165px;
+    align-items: center;
+    flex-wrap: wrap;
+    width:inherit;
+    height:inherit;
+    
+    
+    
+    .profileContainer{
+        
+
+        width:300px;
+        height:300px;
+        transition: all 0.5s ease-in-out;
+        border-radius: 10px;
+        padding: 10px;
+        border:5px solid  #D4F6CC;
+        border-top:5px solid #A5C9CA;
+        border-left: 5px solid #A5C9CA;
+    
+        
+        &:hover{
+            cursor:pointer;
+           
+        }
+        .Profile1{
+
+            width:inherit;
+            height:inherit;
+            border-radius:10px;
+            background-color: #E7F6F2;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width:250px;
+                height:150px;
+                border-radius:10px;
+    
+            }
+            button{
+                width:140px;
+                 background-color:$mainColor;
+                    padding:10px;
+                    border-radius:10px;
+                    border:3px solid $secondaryColor;
+                
+                    a{
+                        text-decoration: none;
+                        color:#A5C9CA;
+                        font-weight:bold;
+                    }
+                
+            }
+        }
+
+    }
+   @media (max-width: 930px){
+    gap:15px;
+
+    .profileContainer{
+
+        width:150px;
+        height:150px;
+        .Profile1{
+            img{
+                width:120px;
+                height:80px;
+            }
+            button{
+                width:100px;
+            }
+        }
+    }
+   }
+
+   
+}
+@media (max-width:1375px){
+    h1{
+        margin-top:55px;
+        font-size:20px;
+    }
+    .coderImg{
+        display:none;
+    }
+}
 }
