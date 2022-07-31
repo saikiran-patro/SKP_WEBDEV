@@ -23,7 +23,7 @@ export default function Certificate() {
                 
           </div>
 
-          <img className="cert" src={require("./Assets/certi.png" )}alt="certi" />
+          <img className="cert" src={require("./Assets/certi.png" )} alt="certi" />
 
       </div>
     </div>
