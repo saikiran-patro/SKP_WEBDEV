@@ -11,6 +11,9 @@
         font-size:35px;
         margin-top:10px;
         color:#A5C9CA;
+        @media (max-width:600px){
+            font-size:25px;
+        }
     }
     .Back{
         position:absolute;
@@ -21,10 +24,19 @@
         color:#A5C9CA;
         background-color:transparent;
         border:none;
+        width:fit-content;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         &:hover{
             color:#E7F6F2;
+        }
+
+        @media (max-width: 600px) {
+            
+            
+            font-size:25px;
+            height:57vh;
+            left:35%;
         }
         
     }
@@ -38,12 +50,19 @@
         border:none;
         cursor: pointer;
         width:fit-content;
-        
+        text-align: center;
     
         overflow:hidden;
         transition: all 0.3s ease-in-out;
         &:hover{
             color:#E7F6F2;
+        }
+        @media (max-width: 600px) {
+            
+            
+            font-size:25px;
+            height:57vh;
+            right:35%;
         }
         
     }

@@ -16,7 +16,7 @@ export default function Navbar() {
             <li> <a href="#Skills"> <FaCode className="MenuIcon" /></a></li>
             <li> <a href="#Projects"> <FaLaptopCode className="MenuIcon"/> </a></li>
             <li> <a href="#Profiles"> <FaBug className="MenuIcon"/></a></li>
-            <li> <a href="#Certificate"><FaCertificate /></a></li>
+            <li> <a href="#Certificates"><FaCertificate className="MenuIcon"/></a></li>
             <li> <a href="https://www.youtube.com/channel/UCPv9XuCE1Cho5QDYBcqWphA" rel="noreferrer" target="_blank"> <FaYoutube className="MenuIcon"/></a></li>
             <li> <a href="#Contact"> <FaEnvelope className="MenuIcon"/></a></li>
         
