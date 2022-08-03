@@ -1,9 +1,23 @@
 import React,{useState} from 'react'
-import { FaLightbulb,FaGlobe,FaAndroid,FaMicrochip,FaGithub,FaPlus,FaYoutube} from "react-icons/fa";
+import Techstack from '../TechStack/Techstack.jsx';
+import { FaLightbulb,FaGlobe,FaAndroid,FaMicrochip,FaGithub,FaYoutube,FaArrowLeft} from "react-icons/fa";
 
 //import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './Projects.scss'
 export default function Projects() {
+
+   // const [ projectTypeStack,setprojectTypeStack]=useState("");
+const [ projectNameStack,setprojectNameStack]=useState("");
+  
+  const showCode=(projectN)=>{
+
+        
+          setprojectNameStack(projectN);
+         setShowStack(true);
+     
+  }
+
+   
   const checkType=(type)=>{
 
       if(type==='Featured'){
@@ -34,6 +48,7 @@ export default function Projects() {
         setMobiletype(false);
         
         setIottype(true);
+        
       }
   }
 
@@ -41,6 +56,8 @@ export default function Projects() {
   const [Webtype,setWebtype]=useState(false);
   const [Mobiletype,setMobiletype]=useState(false);
     const [Iottype,setIottype]=useState(false);
+    const [showStack,setShowStack]=useState(false);
+   
   return (
     <div className='Projects' id='Projects'>
     <h1>PROJECTS</h1>
@@ -59,42 +76,31 @@ export default function Projects() {
             <div className="project">
                 <img src={require('./Assets/Featured/TeslaClone.png')}  alt="TeslaApp" />
                 <h3>Tesla App</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/Tesla-APP" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                 
-                </div>
-                             
+                <button onClick={()=> showCode('Tesla App')}>view </button>                             
                 
 
             </div>
             <div className="project">
                 <img src={require('./Assets/Featured/CloudPrinter.png')}  alt="CloudPrinter" />
                 <h3>Cloud Printer App</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/CloudPrinter" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                 
-                </div>
+
+                <button onClick={()=> showCode('Cloud Printer App')}>view </button>
+                
 
             </div>
             <div className="project">
                 <img src={require('./Assets/Featured/WordBookExtension.png')}  alt="ChromeExtension" />
                 <h3>Word Book Extension</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/Word-Book" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                     <button ><a href="https://chrome.google.com/webstore/detail/word-book/lacbcjnocgmecilghhgijlcfoeaoehbn?hl=en&authuser=0" target="_blank" rel="noopener noreferrer"> <FaPlus/> Add Extension</a></button>
-                 
-                </div>
+            
+                <button onClick={()=> showCode('Word Book Extension')}>view </button>
+        
 
             </div>
             <div className="project">
                 <img src={require('./Assets/Featured/FallDetection.png')}  alt="FallDetection" />
                 <h3>Human Fall Detection (Prototype)</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/Human-fall-detection-system" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                     <button ><a href="https://www.youtube.com/watch?v=schAiYABB6k" target="_blank" rel="noopener noreferrer"> <FaYoutube/> Video</a></button>
-                 
-                </div>
-
+                 <button onClick={()=> showCode('Human Fall Detection')}>view </button>
+                
             </div>
 
           
@@ -104,11 +110,10 @@ export default function Projects() {
             <div className="project">
                 <img src={require('./Assets/Web/CancerPrediction.png')}  alt="TeslaApp" />
                 <h3>Cancer Prediction App</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/CancerPrediction" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                 
-                </div>
-               
+
+                <button onClick={()=> showCode('Cancer Prediction App')}>view </button>
+
+                
                             
                 
 
@@ -202,7 +207,7 @@ export default function Projects() {
                 </div>
 
         </div>
-        <div className="project">
+            <div className="project">
                 <img src={require('./Assets/IoT/Home.png')}  alt="FallDetection" />
                 <h3>Voice Controlled Home Automation</h3>
                 <div className="buttonInAction">
@@ -216,7 +221,18 @@ export default function Projects() {
 
       
     </div>
+    <div className={"techStack " + (showStack && "acti")}>
 
+        <Techstack  projectNameS={projectNameStack} state={showStack} />
+
+         {showStack?(
+            <button className="backwardButton" onClick={()=>setShowStack(false)}><FaArrowLeft/> Back</button>
+         ):(
+            <button style={{"display":"none"}} onClick={()=>setShowStack(false)}>Back</button>
+         )}
+    
+    </div>
+    
     
     
     
