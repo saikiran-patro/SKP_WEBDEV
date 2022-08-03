@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import Techstack from '../TechStack/Techstack.jsx';
-import { FaLightbulb,FaGlobe,FaAndroid,FaMicrochip,FaGithub,FaYoutube,FaArrowLeft} from "react-icons/fa";
+import { FaLightbulb,FaGlobe,FaAndroid,FaMicrochip,FaArrowLeft} from "react-icons/fa";
 
 //import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './Projects.scss'
@@ -124,30 +124,22 @@ const [ projectNameStack,setprojectNameStack]=useState("");
             <div className="project">
                 <img src={require('./Assets/Web/CloudPrinter.png')}  alt="CloudPrinter" />
                 <h3>Cloud Printer App</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/CloudPrinter" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                 
-                </div>
-
+                <button onClick={()=> showCode('Cloud Printer App')}>view </button>
+               
             </div>
             <div className="project">
                 <img src={require('./Assets/Web/ContactsApp.png')}  alt="ContactsApp" />
                 <h3>Contacts App</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/Contact-Manager-App" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                   
-                 
-                </div>
+
+                <button onClick={()=> showCode('Contacts App')}>view </button>
+                
 
             </div>
             <div className="project">
                 <img src={require('./Assets/Web/Memorandum.png')}  alt="MemorandumApp" />
                 <h3>Memorandum App</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/Memorandum_App" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                  
-                 
-                </div>
+                <button onClick={()=> showCode('Memorandum App')}>view </button>
+               
 
             </div>
             
@@ -159,11 +151,8 @@ const [ projectNameStack,setprojectNameStack]=useState("");
             <div className="project">
                 <img src={require('./Assets/Android/LexiconMaster.png')}  alt="LexiconMaster" />
                 <h3>Dictionary App</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/LexiconMaster" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                 
-                </div>
-               
+                <button onClick={()=> showCode('Dictionary App')}>view </button>
+                
                             
                 
 
@@ -174,21 +163,13 @@ const [ projectNameStack,setprojectNameStack]=useState("");
             <div className="project">
                 <img src={require('./Assets/Android/PrimeVideoStore.png')}  alt="PrimeVideoStore" />
                 <h3>Prime Video Store </h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/PrimeVStore" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                   
-                 
-                </div>
+                <button onClick={()=> showCode('Prime Video Store')}>view </button>
 
             </div>
             <div className="project">
                 <img src={require('./Assets/Android/TeslaClone.png')}  alt="TeslaClone" />
                 <h3>Tesla App</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/Tesla-APP" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                  
-                 
-                </div>
+                <button onClick={()=> showCode('Tesla App')}>view </button>
 
             </div>
             
@@ -200,22 +181,14 @@ const [ projectNameStack,setprojectNameStack]=useState("");
         <div className="project">
                 <img src={require('./Assets/IoT/FallDetection.png')}  alt="FallDetection" />
                 <h3>Human Fall Detection (Prototype)</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://drive.google.com/file/d/1mStZAMkmx5BtHU50c9bGnzVOl4JHGm6e/view" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                     <button ><a href="https://www.youtube.com/watch?v=schAiYABB6k" target="_blank" rel="noopener noreferrer"> <FaYoutube/> Video</a></button>
-                 
-                </div>
+                <button onClick={()=> showCode('Human Fall Detection')}>view </button>
 
         </div>
             <div className="project">
                 <img src={require('./Assets/IoT/Home.png')}  alt="FallDetection" />
                 <h3>Voice Controlled Home Automation</h3>
-                <div className="buttonInAction">
-                     <button ><a href="https://github.com/saikiran-patro/Voice-controlled-Home-Automation" target="_blank" rel="noopener noreferrer"><FaGithub />  View Code</a></button>
-                     <button ><a href="https://www.youtube.com/watch?v=IoOA29knfkg" target="_blank" rel="noopener noreferrer"> <FaYoutube/> Video</a></button>
-                 
-                </div>
-
+                <button onClick={()=> showCode('Voice Controlled Home Automation')}>view</button>
+                
             </div>
           
 

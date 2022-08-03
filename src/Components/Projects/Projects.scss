@@ -334,41 +334,19 @@
                     height:150px;
                     border-radius:10px;
                 }
-                .buttonInAction{
-                    width:100%;
-                    margin-top:20px;
-                    display:flex;
-                    flex-direction:row;
-                    justify-content:space-around;
-                    align-items:center;
-                    
-                    button{
-                        width:140px;
-                        &:nth-child(1){
-                            background-color:$mainColor;
-                            padding:10px;
-                            border-radius:10px;
-                            border:3px solid $secondaryColor;
-                        
-                            a{
-                                text-decoration: none;
-                                color:#A5C9CA;
-                                font-weight:bold;
-                            }
-                        }
-                        &:nth-child(2){
-                            background-color:#A5C9CA;
-                            padding:10px;
-                            border-radius:10px;
-                            border:3px solid $mainColor;
-                            a{
-                                text-decoration: none;
-                                color:$mainColor;
-                                font-weight:bold;
-                            }
-                        }
-                    }
-                }
+                button{
+                    width:140px;
+                    background-color:$mainColor;
+                    padding:10px;
+                    border-radius:10px;
+                    border:3px solid $secondaryColor;
+                    cursor: pointer;
+                    color:$secondaryColor;
+
+                
+                
+                 }
+
                 @media (max-width: 1327px){
                     
                         width:200px;
@@ -382,23 +360,16 @@
                             height:100px;
                             border-radius: 10px;
                         }
-                        .buttonInAction{
+                        button{
+                            width:120px;
                             
-                            flex-direction: column;
+                            height:45px;
+                            margin-bottom: 10px;
 
-                            button{
-                                width:120px;
-                                
-                                height:45px;
-                                margin-bottom: 10px;
-
-                                
-                                a{
-                                    font-size:12px
-                                }
-                                 }
                             
-                        }
+                            
+                             }
+                       
                 
             
                 }
@@ -450,41 +421,18 @@
                     height:150px;
                     border-radius:10px;
                 }
-                .buttonInAction{
-                    width:100%;
-                    margin-top:20px;
-                    display:flex;
-                    flex-direction:row;
-                    justify-content:space-around;
-                    align-items:center;
-                    
-                    button{
-                        width:140px;
-                        &:nth-child(1){
-                            background-color:$mainColor;
-                            padding:10px;
-                            border-radius:10px;
-                            border:3px solid $secondaryColor;
-                        
-                            a{
-                                text-decoration: none;
-                                color:#A5C9CA;
-                                font-weight:bold;
-                            }
-                        }
-                        &:nth-child(2){
-                            background-color:#A5C9CA;
-                            padding:10px;
-                            border-radius:10px;
-                            border:3px solid $mainColor;
-                            a{
-                                text-decoration: none;
-                                color:$mainColor;
-                                font-weight:bold;
-                            }
-                        }
-                    }
-                }
+                button{
+                    width:140px;
+                    background-color:$mainColor;
+                    padding:10px;
+                    border-radius:10px;
+                    border:3px solid $secondaryColor;
+                    cursor: pointer;
+                    color:$secondaryColor;
+
+                
+                
+                 }
                 @media (max-width: 1327px){
                     
                         width:200px;
@@ -498,25 +446,15 @@
                             height:100px;
                             border-radius: 10px;
                         }
-                        .buttonInAction{
+                        button{
+                            width:120px;
                             
-                            flex-direction: column;
+                            height:45px;
+                            margin-bottom: 10px;
 
-                            button{
-                                width:120px;
-                                
-                                height:45px;
-                                margin-bottom: 10px;
-
-                                
-                                a{
-                                    font-size:12px
-                                }
-                                 }
                             
-                        }
-                
-            
+                            
+                             }            
                 }
             }
                
