@@ -55,6 +55,7 @@ const [ projectNameStack,setprojectNameStack]=useState("");
   const [Featuredtype,setFeaturedtype]=useState(true)
   const [Webtype,setWebtype]=useState(false);
   const [Mobiletype,setMobiletype]=useState(false);
+
     const [Iottype,setIottype]=useState(false);
     const [showStack,setShowStack]=useState(false);
    
@@ -98,7 +99,7 @@ const [ projectNameStack,setprojectNameStack]=useState("");
             </div>
             <div className="project">
                 <img src={require('./Assets/Featured/FallDetection.png')}  alt="FallDetection" />
-                <h3>Human Fall Detection (Prototype)</h3>
+                <h3>Human Fall Detection </h3>
                  <button onClick={()=> showCode('Human Fall Detection')}>view </button>
                 
             </div>

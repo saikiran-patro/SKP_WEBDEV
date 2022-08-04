@@ -71,8 +71,7 @@ export default function Techstack({projectNameS,state,setState}) {
                         <h1>{projectNameS}</h1>
                          <img src={require('../Projects/Assets/Featured/CloudPrinter.png')}  alt="Cloud Printing App" /><br/><br/>
                          <h3>
-                             A Cloud Printing Application is an app that allows users to print their documents from the cloud. An Application is developed for both Admin for configuration of printers and for user for uploading documents and print from cloud.
-                         
+                             A Cloud Printing Application is an app that allows users to print their documents from the cloud.
                          </h3>
                          <div className="buttonInAction">
                                 <button ><a href="https://github.com/saikiran-patro/CloudPrinter" target="_blank" rel="noopener noreferrer"><FaGithub/> View Code</a></button>
@@ -251,8 +250,7 @@ export default function Techstack({projectNameS,state,setState}) {
                         <h1>{projectNameS}</h1>
                          <img src={require('../Projects/Assets/Web/CancerPrediction.png')}  alt="Cancer APP" /><br/><br/>
                          <h3>
-                                 Cancer Prediction Application is an app designed to predict lung cancer and skin cancer of people before it get worsen.This app is integrated with Machine Learning and Deep Learning models with more than 97% accuracy.
-
+                                 Cancer Prediction Application is an app designed to predict lung cancer and skin cancer of people before it get worsen.
 
            
                          </h3>

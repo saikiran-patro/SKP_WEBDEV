@@ -37,6 +37,10 @@
                 font-weight:bold;
                 margin-left: 10px;
                 margin-right: 10px;
+
+                @media (max-width: 600px){
+                    font-size:15px;
+                }
             }
             .buttonInAction{
 

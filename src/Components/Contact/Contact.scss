@@ -1,3 +1,93 @@
-.contact{
-    background-color:royalblue;
+.Contact{
+    background-image: url(./back2.png);
+    
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    @media (max-width:600px){
+        background:none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    justify-content: center;
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap:20px;
+        h2{
+            font-size: 20px;
+            color:#A5C9CA;
+        }
+    
+         img{
+            width:200px;
+            height:200px;
+         }
+        button{
+            width:300px;
+            height:50px;
+            a{
+                text-decoration: none;
+               
+                color:black;
+                font-weight: bold;
+                font-size: 20px;  
+            }                          
+                border:3px solid black;
+                border-radius: 10px;
+                transition: all 2s ease;;
+                
+              
+    
+                $topBarDarkBlue: #A5C9CA;
+                $topBarLightBlue: #E7F6F2;
+            
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $topBarDarkBlue),
+                color-stop(100%, $topBarLightBlue));
+                
+            
+        }
+    }
+    .quote{
+        display: flex;
+        align-items: center;
+        
+        h3{
+            color:#E7F6F2;
+            span{
+                display:flex;
+                gap:10px;
+                .Typewriter__wrapper{
+                    color:#8FE3CF;
+                }
+                .Typewriter__cursor{
+                    display:none;
+                }
+            }
+        }
+    }
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        align-items: center;
+        justify-content: center;
+        a{
+            text-decoration: none
+        }
+        .socialIcon{
+            font-size:35px;
+            cursor: pointer;
+            color:#E7F6F2;
+            &:hover{
+                color:#A5C9CA;
+            }
+        }
+    }
 }

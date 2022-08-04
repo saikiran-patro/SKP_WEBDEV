@@ -9,8 +9,8 @@ export default function About() {
     
         <div className="aboutContainer">
               <h1>A li'l bit about myself</h1><br/>
-              <p>A technophile with good web development skills.Passionate about learning new technologies, and enjoy making tech content online on Youtube! <i class="fab fa-youtube"></i></p>
-              <p>I'm interested in Information Technology, space technology inspired by Elon Musk and also huge marvel fan!😄 </p>
+              <p>I'm a Full Stack Web Developer and a Technophile who loves to learn and explore cutting edge technologies. <i class="fab fa-youtube"></i></p>
+              <p>I'm interested in Information Technology, Rocket Science technology inspired by Elon Musk and also huge marvel fan!😄 </p>
               <h2>Check out my youtube channel!</h2>
               
                <iframe style={{"border-radius":"30px"}} width="300" height="200" src="https://www.youtube.com/embed/WTUULDLrf-k" title="Web 3.0: The next generation of web technology ! 🔥 🔥" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />

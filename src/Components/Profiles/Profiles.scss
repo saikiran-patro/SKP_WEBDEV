@@ -51,10 +51,11 @@
         border:5px solid  #D4F6CC;
         border-top:5px solid #A5C9CA;
         border-left: 5px solid #A5C9CA;
-    
+        transition: all 0.5s ease-in-out;
         
         &:hover{
             cursor:pointer;
+            transform: scale(1.1);
            
         }
         .Profile1{

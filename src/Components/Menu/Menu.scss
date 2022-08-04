@@ -13,6 +13,8 @@
     justify-content:center;
     transition: all 1s ease-in-out;
     align-items:center;
+    
+   
     ul{
         li{
             margin-bottom:20px;
@@ -39,15 +41,23 @@
         margin: 0;
 
     }
+
     &.active{
+        @media (max-width:1050){
+            right: -300px;
+        }
         right:0px;
         background-color: $mainColor;
         a{
             color:$secondaryColor;
         text-decoration: none;
+
+        
         
 
         }
         
+        
 }
+
 }
