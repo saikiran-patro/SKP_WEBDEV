@@ -9,8 +9,13 @@ import Menu from "./Components/Menu/Menu.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Certificate from "./Components/Certificates/Certificate.jsx";
 import './App.scss'; 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 
 import {useState} from 'react';
+
+AOS.init();
 function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);

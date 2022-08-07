@@ -111,14 +111,14 @@
                             transition: all 2s ease;;
                             
                           
-                        &:hover{
+                        
                             $topBarDarkBlue: #A5C9CA;
                             $topBarLightBlue: #E7F6F2;
                         
                             background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $topBarDarkBlue),
                             color-stop(100%, $topBarLightBlue));
                             
-                        }
+                        
 
                     }
                     
